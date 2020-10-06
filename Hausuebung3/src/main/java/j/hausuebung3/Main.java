@@ -46,7 +46,16 @@ public  static void main(String[] args){
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
     
+    weapons.sort((w1, w2) -> Integer.compare(w1.getDamage(), w2.getDamage()));
+    
+    weapons.sort((w1, w2) -> {
+        
+    }
+    );
 }
+
+
+
     
                    
 }
