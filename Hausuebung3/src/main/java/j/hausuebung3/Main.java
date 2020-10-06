@@ -50,7 +50,19 @@ public  static void main(String[] args){
     
     weapons.sort((w1, w2) -> {
         
+        if(w1.getCombatType()!=w2.getCombatType()){
+            return w1.getCombatType().toString().compareTo(w2.combatType.toString());
+           }else if(w1.getTypeDamage()!= w2.getTypeDamage()){
+              return w1.getTypeDamage().toString().compareTo(w2.getTypeDamage().toString());
+           }else{
+               return w1.getName().compareTo(w2.getName());
+               
+           }
+        
+
     }
+        
+    
     );
 }
 
